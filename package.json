@@ -1,6 +1,6 @@
 {
   "name": "next-env-auditor",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Audit env usage in Next.js apps. Generates report.html, report.json, and .env.example.generated.",
   "type": "commonjs",
   "bin": {
