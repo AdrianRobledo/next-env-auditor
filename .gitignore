@@ -1,0 +1,6 @@
+node_modules/
+*.tgz
+report.html
+report.json
+.env
+.DS_Store
