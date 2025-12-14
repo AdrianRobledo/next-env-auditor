@@ -1,0 +1,59 @@
+{
+  "scannedInput": "/Users/adrianrobledo/Desktop/demo-next",
+  "totals": {
+    "filesScanned": 5,
+    "envVarsFound": 3,
+    "missingCount": 0,
+    "unusedCount": 0,
+    "riskyCount": 2
+  },
+  "envVarsUsed": [
+    "NEXT_PUBLIC_API_URL",
+    "NEXT_PUBLIC_SERVER_ONLY",
+    "SECRET_API_KEY"
+  ],
+  "missing": [],
+  "unused": [],
+  "risky": [
+    {
+      "type": "Secret-like env used in potentially client-exposed code (heuristic)",
+      "key": "SECRET_API_KEY",
+      "file": "app/page.tsx",
+      "line": 4,
+      "why": "Name looks like a secret (KEY/TOKEN/SECRET/PASSWORD). Because it’s referenced in app/ or pages/, it may end up in browser code depending on how the component is used."
+    },
+    {
+      "type": "NEXT_PUBLIC_ used only in server code",
+      "key": "NEXT_PUBLIC_SERVER_ONLY",
+      "file": "app/api/test/route.ts",
+      "line": 2,
+      "why": "NEXT_PUBLIC_* is meant for browser-exposed vars. If it's only used in server routes, it may be misnamed or unintended."
+    }
+  ],
+  "locationsByEnvVar": {
+    "SECRET_API_KEY": [
+      {
+        "file": "app/page.tsx",
+        "line": 4,
+        "isClient": false,
+        "isServerFile": false
+      }
+    ],
+    "NEXT_PUBLIC_API_URL": [
+      {
+        "file": "app/page.tsx",
+        "line": 5,
+        "isClient": false,
+        "isServerFile": false
+      }
+    ],
+    "NEXT_PUBLIC_SERVER_ONLY": [
+      {
+        "file": "app/api/test/route.ts",
+        "line": 2,
+        "isClient": false,
+        "isServerFile": true
+      }
+    ]
+  }
+}
