@@ -23,3 +23,6 @@
     "README.md"
   ]
 }
+"repository": { "type": "git", "url": "git+https://github.com/AdrianRobledo/next-env-auditor.git" },
+"bugs": { "url": "https://github.com/AdrianRobledo/next-env-auditor/issues" },
+"homepage": "https://github.com/AdrianRobledo/next-env-auditor#readme"
