@@ -1,17 +1,26 @@
 {
   "name": "next-env-auditor",
   "version": "1.0.3",
-  "description": "",
-  "main": "index.js",
+  "description": "Audit env usage in Next.js apps. Generates report.html, report.json, and .env.example.generated.",
   "type": "commonjs",
   "bin": {
     "env-auditor": "bin.js"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrianRobledo/next-env-auditor.git"
   },
-  "keywords": [],
-  "author": "",
+  "bugs": {
+    "url": "https://github.com/AdrianRobledo/next-env-auditor/issues"
+  },
+  "homepage": "https://github.com/AdrianRobledo/next-env-auditor#readme",
+  "keywords": [
+    "nextjs",
+    "env",
+    "audit",
+    "security",
+    "cli"
+  ],
   "license": "ISC",
   "dependencies": {
     "adm-zip": "^0.5.16",
@@ -23,6 +32,3 @@
     "README.md"
   ]
 }
-"repository": { "type": "git", "url": "git+https://github.com/AdrianRobledo/next-env-auditor.git" },
-"bugs": { "url": "https://github.com/AdrianRobledo/next-env-auditor/issues" },
-"homepage": "https://github.com/AdrianRobledo/next-env-auditor#readme"
